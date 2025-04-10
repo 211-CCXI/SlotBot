@@ -1,0 +1,17 @@
+{
+    "name": "slotbot",
+    "version": "1.0.0",
+    "description": "Bot Discord de gestion de pings clients avec système de slots.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node start.js"
+    },
+    "author": "TonNomIci",
+    "license": "ISC",
+    "dependencies": {
+      "discord.js": "^14.11.0",
+      "fs": "^0.0.1-security",
+      "node-cron": "^3.0.2"
+    }
+  }
+  

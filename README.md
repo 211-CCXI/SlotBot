@@ -1,56 +1,24 @@
-# Discord Slot Bot
+# 🎰 SlotBot - Bot Discord de gestion de pings personnalisés
 
-Ce bot Discord permet aux clients de louer un espace privé sur un serveur Discord. Chaque client dispose de permissions spécifiques, incluant la possibilité d'envoyer un ping `@everyone` et un ping `@here` par jour, mais uniquement via le bot.
+SlotBot est un bot Discord conçu pour gérer les salons clients avec des pings limités (`@everyone` et `@here`) par jour, avec un système de reset automatique et un suivi personnalisé.
 
-## Fonctionnalités
+## 🚀 Fonctionnalités
 
-- **Location d'espace privé** : Chaque client obtient un salon privé où il peut mettre ce qu'il veut.
-- **Pings limités** : Un client peut envoyer un ping `@everyone` et un ping `@here` par jour, via le bot uniquement.
-- **Gestion des pings** : Les clients peuvent vérifier combien de temps il leur reste avant que leurs pings ne soient réinitialisés, et combien de pings il leur reste.
-- **Commandes d'administration** :
-  - `/addclient <salon_id> <client_id>` : Ajoute un client avec un salon dédié et des permissions de ping.
-  - `/pingstatus` : Affiche le temps restant avant le reset des pings et le nombre de pings restants pour le client.
+- 📢 Ping limité de `@everyone` et `@here` par salon et par jour.
+- ⏰ Affichage du nombre de pings restants et du temps avant réinitialisation.
+- 🛡️ Commandes Slash simples et sécurisées.
+- 🔄 Commande `/addclient` pour ajouter facilement de nouveaux clients.
+- 🧩 Gestion automatique des permissions de salons clients.
 
-## Installation
+## 🧩 Pré-requis
 
-1. Clonez ce dépôt :
-   ```bash
-   git clone https://github.com/votre-utilisateur/discord-slot-bot.git
-Allez dans le dossier du projet :
+- Node.js v16.9.0 ou supérieur
+- Avoir créé une application et un bot sur le [portail Discord Developer](https://discord.com/developers/applications)
 
-bash
-Copier
-Modifier
-cd discord-slot-bot
-Installez les dépendances nécessaires :
+## ⚙️ Installation
 
-bash
-Copier
-Modifier
-npm install
-Créez un fichier .env à la racine de votre projet pour stocker votre token Discord et d'autres informations sensibles. Exemple de contenu :
+1. Clone le projet :
 
-env
-Copier
-Modifier
-DISCORD_TOKEN=your-discord-bot-token
-GUILD_ID=your-server-id
-Usage
-Lancer le bot :
-
-bash
-Copier
-Modifier
-node serveur.js
-Ajoutez un client avec la commande /addclient dans Discord. Un client pourra alors envoyer un ping @everyone et @here via le bot dans son salon dédié.
-
-Utilisez la commande /pingstatus pour vérifier le statut des pings restants pour chaque client.
-
-Contributions
-Les contributions sont les bienvenues ! Si vous avez des suggestions ou des corrections à proposer, n'hésitez pas à ouvrir une pull request.
-
-License
-Distribué sous la licence MIT. Voir le fichier LICENSE pour plus de détails.
-
-Description
-Bot Discord permettant aux clients de louer un espace privé avec des pings limités via commandes.
+```bash
+git clone https://github.com/ton-utilisateur/slotbot.git
+cd slotbot
